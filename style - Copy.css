@@ -1,0 +1,129 @@
+/* Basic Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: orange;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Promotional Banner */
+.banner {
+    background-color: #ffcc80;
+    text-align: center;
+    padding: 40px;
+}
+
+.banner h2 {
+    font-size: 30px;
+}
+
+button {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Product Section */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Individual Product */
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px gray;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+}
+
+.product button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
